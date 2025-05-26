@@ -9,7 +9,7 @@ from langchain.prompts import PromptTemplate
 class StockAnalysisRAG:
     def __init__(self):
         """Initialize the analysis pipeline with Ollama."""
-        self.llm = ChatOllama(model="mistral", temperature=0)  # Using Mistral model from Ollama
+        self.llm = ChatOllama(model="mistral", temperature=1)  # Using Mistral model from Ollama
         
     def process_stock_data(self, stock_data: Dict) -> str:
         """Process and format stock financial data."""
